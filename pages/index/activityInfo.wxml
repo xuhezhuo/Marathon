@@ -1,0 +1,4 @@
+<!--pages/index/activityInfo.wxml-->
+<view>
+  <image mode='widthFix' bindtap='preview' src='http://p1b04j0n4.bkt.clouddn.com/detail.png' style='width: 100%'></image>
+</view>

@@ -1,0 +1,131 @@
+<!--pages/index/activity.wxml-->
+<view class='background'>
+  <image src='{{path}}' mode='widthFix'></image> 
+</view> 
+<view class='ADD'>
+  <view class='addPic'>
+    <image bindtap='shareStep' src='{{headimgUrl}}'></image> 
+  </view>
+</view>
+<view style='margin-top: 168rpx;font-size:28rpx;text-align:center'>
+    <text bindtap='shareStep'>点击头像生成专属页面</text>
+</view>
+<view class="container">
+    <button bindtap='step'>捐赠步数</button>
+</view>
+<view style='margin-top: 32rpx;font-size:28rpx;text-align:center;font-weight: 300'>
+    <text>我捐赠的步数: <text>{{step}}</text></text>
+</view>
+<view style='margin-top: 28rpx;font-size:28rpx;text-align:center;font-weight: blod;color: orange'>
+    <text>建发绿跑团总捐赠步数: </text>
+</view>
+<view style='margin-top: 12rpx;font-size:36rpx;text-align:center;font-weight: blod;color: orange'>
+    <text>{{total}}</text>
+</view>
+<view class='list'>
+  <view class='title'>
+    <image mode='widthFix' class='heart' src='{{heart}}'></image>
+    <text style='margin-left: 108rpx;'>捐赠统计</text>
+    <text class='person' bindtap='person'>点击查看排行榜</text>
+  </view>
+
+   <!-- 跑团5  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image class='headImg' bindtap='preview' data-src='{{headImg1}}' src='{{headImg1}}'></image>
+    </view>
+    <view style='width: 45%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom: 36rpx;'>
+        <text style='font-size:28rpx;'>本部+会展分队</text>
+      </view>
+      <view style='width:60%'>
+        <progress class='progress' percent="{{progressE}}" color="{{progressE < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="true"/>
+        <text class='percent'>{{progressE}}%</text>
+      </view>
+    </view>
+    <view style='width:28%' style='margin:auto;margin-top: 44rpx;'>
+      <text class='step'>{{stepE}} 步</text>
+      <text class='allStep'>目标: {{allStep}}步</text>      
+    </view>
+  </view>
+  <!-- 跑团1  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image class='headImg' bindtap='preview' data-src='{{headImg2}}' src='{{headImg2}}'></image>
+    </view>
+    <view style='width: 45%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom: 36rpx;'>
+        <text >建发股份分队</text>
+      </view>
+      <view style='width:60%'>
+        <progress class='progress' percent="{{progressA}}" color="{{progressA < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="true"/>
+        <text class='percent'>{{progressA}}%</text>
+      </view>
+    </view>
+    <view style='width:28%' style='margin:auto;margin-top: 44rpx;'>
+      <text class='step'>{{stepA}} 步</text>
+      <text class='allStep'>目标: {{allStep}}步</text>
+    </view>
+  </view>
+
+  <!-- 跑团2  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image class='headImg' bindtap='preview' data-src='{{headImg3}}' src='{{headImg3}}'></image>
+    </view>
+    <view style='width: 45%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom: 36rpx;'>
+        <text >建发房产分队</text>
+      </view>
+      <view style='width:60%'>
+        <progress class='progress' percent="{{progressB}}" color="{{progressB < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="true"/>
+        <text class='percent'>{{progressB}}%</text>
+      </view>
+    </view>
+    <view style='width:28%' style='margin:auto;margin-top: 44rpx;'>
+      <text class='step'>{{stepB}} 步</text>
+      <text class='allStep'>目标: {{allStep}}步</text>      
+    </view>
+  </view>
+
+  <!-- 跑团3  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image class='headImg' bindtap='preview' data-src='{{headImg4}}' src='{{headImg4}}'></image>
+    </view>
+    <view style='width: 45%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom: 36rpx;'>
+        <text >联发集团分队</text>
+      </view>
+      <view style='width:60%'>
+        <progress class='progress' percent="{{progressC}}" color="{{progressC < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="true"/>
+        <text class='percent'>{{progressC}}%</text>
+      </view>
+    </view>
+    <view style='width:28%' style='margin:auto;margin-top: 44rpx;'>
+      <text class='step'>{{stepC}} 步</text>
+      <text class='allStep'>目标: {{allStep}}步</text>      
+    </view>
+  </view>
+
+  <!-- 跑团4  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image class='headImg' bindtap='preview' data-src='{{headImg5}}' src='{{headImg5}}'></image>
+    </view>
+    <view style='width: 45%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom: 36rpx;'>
+        <text>旅游集团分队</text>
+      </view>
+      <view style='width:60%'>
+        <progress class='progress' percent="{{progressD}}" color="{{progressD < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="true"/>
+        <text class='percent'>{{progressD}}%</text>
+      </view>
+    </view>
+    <view style='width:28%' style='margin:auto;margin-top: 44rpx;'>
+      <text class='step'>{{stepD}} 步</text>
+      <text class='allStep'>目标: {{allStep}}步</text>      
+    </view>
+  </view>
+
+</view>

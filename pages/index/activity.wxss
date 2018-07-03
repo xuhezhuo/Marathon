@@ -1,0 +1,150 @@
+/* pages/index/activity.wxss */
+.background image{
+  width: 100%;
+  /* height: 320rpx; */
+}
+
+.ADD{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 238rpx;
+  top:332rpx ;
+  text-align: center;
+}
+
+.addPic {
+  width: 192rpx;
+  height: 192rpx;
+  margin: 0 auto; 
+  margin-top: 28rpx;
+  border-radius: 50%;
+  /* background: linear-gradient(to right, #fcb731 0%, #fb9032 100%); */
+}
+
+.addPic image{
+  width: 192rpx;
+  height: 192rpx;
+  border-radius: 50%;
+}
+
+.container{
+  margin: 36rpx;
+  margin-bottom: 32rpx;
+  padding: 0rpx;
+}
+
+.container button{
+  background: linear-gradient(to right, #fcb731 0%, #fb9032 100%);
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 84rpx;
+  font-weight: 300;
+  width: 628rpx;
+  border-radius: 42rpx;
+}
+
+.container button::after{
+  border: none;
+}
+
+.back{
+  width: 100%;
+  height: 36rpx;
+}
+
+.back text{
+  position: absolute;
+  right: 100rpx;
+  font-size: 26rpx;
+  color: rgba(125,125,125,0.91);
+  font-weight: 300;
+}
+
+.heart{
+  width: 48rpx;
+  position: absolute;
+  left: 42rpx;
+  margin-top: 22rpx;
+}
+
+.list{
+  margin-top: 42rpx;
+  text-align: left;
+}
+
+.list .title{
+  text-align: left;
+  width: 100%;
+  line-height: 88rpx;
+  background-color: #f6f6f6;
+  font-size: 28rpx;
+  /* padding-left: 39rpx; */
+  font-weight: 500;
+  font-family: "微软雅黑";
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  margin-top: 21rpx;
+  /* background-color: #eee;  */
+}
+
+.headImg{
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 12rpx;
+  margin-left: 18rpx;
+}
+
+.wrapper{
+  margin-top:24rpx;
+  font-size:31rpx;
+  color:rgba(0, 0, 0, 0.98);
+  font-weight:300;
+}
+
+.progress{
+  border-radius: 2rpx; 
+  border:solid 3rpx orange;
+  background-color: #fff;
+}
+
+.percent{
+  position: relative;
+  left: 112px;
+  top: -33rpx;
+  font-weight: 300;
+  font-size: 31rpx;
+}
+
+.item button::after{
+  border: none;
+}
+
+.person{
+  font-size: 26rpx;
+  color: orange;
+  font-weight: bold;
+  position: absolute;
+  right: 28rpx; 
+}
+
+.step{
+  font-size: 34rpx;
+  font-weight: 400;
+  color: #d81f08;
+}
+
+.allStep{
+position:absolute;
+right:10px;
+color:rgba(125,125,125,0.91);
+font-size:25rpx;
+margin-top:69rpx;
+
+}

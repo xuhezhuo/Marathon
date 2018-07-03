@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/activity",
+    "pages/index/activityInfo",
+    "pages/index/comment",
+    "pages/index/person",
+    "pages/index/pic",
+    "pages/index/pic2",
+    "pages/index/member",
+    "pages/index/shareStep"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#fd901e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/running.png",
+        "selectedIconPath": "pages/image/running2.png"
+      },
+      {
+        "pagePath": "pages/index/activity",
+        "text": "去捐步数",
+        "iconPath": "pages/image/love.png",
+        "selectedIconPath": "pages/image/love2.png"
+      },
+      {
+        "pagePath": "pages/index/activityInfo",
+        "text": "活动详情",
+        "iconPath": "pages/image/detail.png",
+        "selectedIconPath": "pages/image/detail2.png"
+      }
+      
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

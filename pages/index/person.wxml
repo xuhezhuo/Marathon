@@ -1,0 +1,73 @@
+<!--pages/index/person.wxml-->
+<view class='first' hidden='{{A}}'>
+  <view style='width: 20%'>
+    <image mode='widthFix' class='gold' src='../image/gold.png'></image>
+  </view>
+  <view style='width: 52%' class='name'>
+    <view class='personName'>
+      <text>{{nameA}}</text>
+    </view>
+    <view class='clubName'>
+      <text>{{groupA}}</text>
+    </view>
+  </view>
+  <view style='width: 28%'>
+    <view class='step'>
+      <text>{{stepA}}步</text>
+    </view>
+  </view>
+</view>
+<view class='second' hidden='{{B}}'>
+  <view style='width: 20%'>
+    <image mode='widthFix' class='silver' src='../image/silver.png'></image>
+  </view>
+  <view style='width: 52%' class='name'>
+    <view class='personName'>
+      <text>{{nameB}}</text>
+    </view>
+    <view class='clubName'>
+      <text>{{groupB}}</text>
+    </view>
+  </view>
+  <view style='width: 28%'>
+    <view class='step'>
+      <text>{{stepB}}步</text>
+    </view>
+  </view>
+</view>
+<view class='thirt' hidden='{{C}}'>
+  <view style='width: 20%'>
+    <image mode='widthFix' class='bronze' src='../image/bronze.png'></image>
+  </view>
+  <view style='width: 52%' class='name'>
+    <view class='personName'>
+      <text>{{nameC}}</text>
+    </view>
+    <view class='clubName'>
+      <text>{{groupC}}</text>
+    </view>
+  </view>
+  <view style='width: 28%'>
+    <view class='step'>
+      <text>{{stepC}}步</text>
+    </view>
+  </view>
+</view>
+<view class='item' wx:for='{{dataList}}' wx:key='{{index}}'>
+  <view style='width: 20%' class='index'>
+    <text>{{index+4}}</text>
+  </view>
+  <view style='width: 52%' class='name'>
+    <view class='personName'>
+      <text>{{item.name}}</text>
+    </view>
+    <view class='clubName'>
+      <text>{{item.group}}</text>
+    </view>
+  </view>
+  <view style='width: 28%'>
+    <view class='step'>
+      <text>{{item.step}}步</text>
+    </view>
+  </view>
+</view>

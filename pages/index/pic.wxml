@@ -1,0 +1,13 @@
+<!--pages/index/pic.wxml-->
+<view style='margin-top:120rpx;'>
+  <image mode='widthFix'  style='width:100%;' src='{{path}}'></image>
+</view>
+<view class='headImg'>
+  <image class='head' src='{{head}}'></image>
+</view>
+<view class='nickName'>
+  <text>{{name}}</text>
+</view>
+<view class='index'>
+  <text>{{index}}</text>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/index/comment.wxml-->
+<view> 
+  <textarea class='text' placeholder='请输入您的评论' bindinput='change'></textarea>
+</view>
+<view class='pic'>
+  <view class='imgList' style='width: 30%;max-height: 230rpx; overflow:hidden' hidden='{{ img1 == "" }}'> 
+    <image src='{{img1}}' mode='widthFix'></image>
+  </view>
+  <view class='imgList'  style='width: 30%;max-height: 230rpx; overflow:hidden' hidden='{{ img2 == "" }}'> 
+    <image src='{{img2}}' mode='widthFix'></image>
+  </view>    
+  <view class='addImg' style='width: 30%'>
+    <image src='{{path1}}' mode='widthFix' bindtap='uploadImage'></image>
+  </view>
+</view>
+<view class='empty'></view>
+<view class="container">
+    <button bindtap='sent' disabled='{{sending}}'>提交</button>
+</view>

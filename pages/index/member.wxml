@@ -1,0 +1,25 @@
+<!--pages/index/member.wxml-->
+<view class='club'>
+  <view class='title'>
+    <image class='img' mode='widthFix' src='../image/club.png'></image>
+    <text>{{club}}</text>
+  </view>
+  <view class='number'>
+    <text>人数: 已加入 <text style='color: orange'>{{total}}</text> 人，共招收 <text style='color: #000;'>160</text> 人</text>
+  </view>
+</view>
+<view class='member'>
+  <view class='title'>
+    <image mode='widthFix' src='../image/man.png'></image>
+    <text>组团成员</text>
+  </view>
+  <view class='man' wx:for='{{dataList}}' wx:key='{{index}}'>
+    <view style='width: 20%'>
+      <image mode='widthFix' style='border-radius: 50%' src='{{item.headimgUrl ? item.headimgUrl : path}}'></image>
+    </view>
+    <view style='width: 80%' class='pm'>
+      <text style='margin-left: 12rpx;margin-top:6rpx;'>{{item.nickName}}</text>
+      <text class='index'>{{index+1}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+/* pages/index/member.wxss */
+.club{
+  padding-top: 45rpx;
+  padding-bottom: 45rpx;
+  border-top: solid 1rpx #eee;
+  border-bottom: solid 1rpx #eee;
+}
+
+.club image{
+  margin-left: 16rpx;
+  position: relative;
+  top: 12rpx;
+  margin-right: 12rpx;
+  width: 48rpx;
+}
+
+.title {
+  font-size: 32rpx;
+}
+
+.number{
+  margin-top: 12rpx;
+  margin-left: 79rpx; 
+  font-size: 30rpx;
+  color: rgba(125,125,125,0.91)
+}
+
+.member{
+  margin-top: 21rpx;
+}
+
+.member image{
+  margin-left:25rpx;
+  position:relative;
+  top:6rpx;
+  margin-right:14rpx;
+  width:36rpx;
+}
+
+.man{
+  display: flex;
+  flex-direction: row;
+  margin-top: 21rpx;
+}
+
+.man image{
+  width: 84rpx;
+  position: relative;
+  right: -36rpx;
+  top: 32rpx;
+}
+
+.pm{
+  border-bottom: solid 1rpx #eee;
+  line-height:109rpx;
+  font-size:30rpx;
+  font-weight:300;
+  padding-top:12rpx;
+}
+
+.index{
+  position: absolute;
+  right: 64rpx;
+}

@@ -1,0 +1,49 @@
+/* pages/index/comment.wxss */
+.text {
+  width: 100%;
+  padding-top:12rpx;
+  font-size: 28rpx;
+  font-weight: 300; 
+  border-top: solid 1rpx #eee;
+  height: 200rpx;
+}
+
+.container{
+  margin: 42rpx;
+  margin-bottom: 32rpx;
+  padding: 0rpx;
+}
+
+.container button{
+  background: linear-gradient(to right, #fcb731 0%, #fb9032 100%);
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 84rpx;
+  font-weight: 300;
+  width: 628rpx;
+  border-radius: 42rpx;
+}
+
+.empty{
+  margin-top: 21rpx;
+  width: 100%;
+  height: 24rpx;
+  background-color: #eee;
+}
+
+.pic, .imgList{
+  display: flex;
+  flex-direction: row;
+}
+
+.imgList image{
+  width: 100%;
+  padding-left: 12rpx;
+}
+
+.addImg image{
+  /* width: 142rpx; */
+  width: 100%;
+  padding-left: 12rpx;
+}
+

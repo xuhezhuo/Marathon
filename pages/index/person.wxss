@@ -1,0 +1,49 @@
+/* pages/index/person.wxss */
+.first, .second, .thirt, .item{
+  margin-top: 48rpx;
+  padding-bottom: 42rpx;
+  border-bottom: solid 2rpx #eee;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.gold, .silver, .bronze {
+  width: 72rpx;
+  margin-top: 12rpx;
+}
+
+.name{
+  text-align: left;
+  color: #fc8b38;
+}
+
+.personName{
+  font-size: 31rpx;
+  line-height:65rpx;
+}
+
+.clubName{
+  font-size: 27rpx;
+  line-height: 36rpx;
+  font-weight: 300;
+}
+
+.step{
+  text-align: center;
+  line-height: 72rpx;
+  margin-top: 12rpx;
+  color: #d81f06;
+  font-size: 40rpx;
+  font-weight: 300;
+}
+
+.item .index {
+  font-size: 36rpx;
+  margin-top: 12rpx;
+  font-family: 'STKaiti'
+}
+
+.item .name, .item .step{
+  color: #000;
+}

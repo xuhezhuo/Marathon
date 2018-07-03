@@ -1,0 +1,165 @@
+<!--index.wxml-->
+<view class='background'>
+       <image src='{{path}}' mode='widthFix'></image> 
+</view> 
+
+<view  bindtap='pic' class='ADD'>
+  <view class='addPic'>
+     <image src='{{headimgUrl}}' ></image>  
+  </view>
+</view>
+<view style='margin-top: 164rpx;font-size:28rpx;text-align:center'>
+    <text>点击头像生成专属页面</text>
+</view>
+<!-- <view class="container">
+  <view class='btn' style='display: flex; flex-direction: row;'>
+    <button style='margin-right:64rpx;border: solid 1rpx orange;color: orange' bindtap='activity'>去捐步数</button> 
+    <button style='border: solid 1rpx orange;color: orange' bindtap='activityInfo'>活动详情</button>    
+  </view> 
+</view> -->
+
+<view class='list' style='margin-top:32rpx;'>
+  <view class='title'>
+    <text style='margin-left:32rpx;'>跑团列表</text>
+  </view> 
+   <!-- 跑团5  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;'>
+    <view style='width:27%'>
+      <image data-group='5' bindtap='previewHead' data-src='{{headImg1}}' class='headImg' src='{{headImg1}}'></image>
+    </view>
+    <view style='width: 54%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom:6rpx;'>
+        <text data-group='5' bindtap='member'>本部+会展分队</text>
+      </view>
+      <view  class='name' style='font-size: 26rpx;'>
+        <text><text style='color:#fd921d'>{{groupE}}</text> / 160</text>
+      </view>
+      <view style='width:64%'>
+        <progress class='progress' percent="{{progressE}}" color="{{progressE < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="false"/>
+      </view>
+    </view>
+    <view style='width:19%' style='margin-top: 64rpx;margin-left:-64rpx;'>
+      <button class='join' data-club='建发绿跑团-本部+会展分队' data-index='5' bindtap='join' data-group='5'>{{button}}</button>
+    </view>
+  </view>
+  <!-- 跑团1  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image data-group='1' data-src='{{headImg2}}' bindtap='previewHead' class='headImg' src='{{headImg2}}'></image>
+    </view>
+    <view style='width: 54%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom:6rpx;'>
+        <text data-group='1' bindtap='member'>建发股份分队</text>
+      </view>
+      <view  class='name' style='font-size: 26rpx;'>
+        <text><text style='color:#fd921d'>{{groupA}}</text> / 160</text>
+      </view>
+      <view style='width:64%'>
+        <progress class='progress' percent="{{progressA}}" color="{{progressA < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="false"/>
+      </view>
+    </view>
+    <view style='width:19%' style='margin-top: 64rpx;margin-left:-64rpx;'>
+      <button class='join' data-club='建发绿跑团-建发股份分队' data-index='1' bindtap='join' data-group='1'>{{button}}</button>
+    </view>
+  </view>
+
+  <!-- 跑团2  -->
+ <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image data-group='2'  data-src='{{headImg3}}' bindtap='previewHead'  class='headImg' src='{{headImg3}}'></image>
+    </view>
+    <view style='width: 54%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom:6rpx;'>
+        <text data-group='2' bindtap='member'>建发房产分队</text>
+      </view>
+      <view  class='name' style='font-size: 26rpx;'>
+        <text><text style='color:#fd921d'>{{groupB}}</text> / 160</text>
+      </view>
+      <view style='width:64%'>
+        <progress class='progress' percent="{{progressB}}" color="{{progressB < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="false"/>
+      </view>
+    </view>
+    <view style='width:19%' style='margin-top: 64rpx;margin-left:-64rpx;'>
+      <button class='join' data-club='建发绿跑团-建发房产分队' data-index='2' bindtap='join' data-group='2'>{{button}}</button>
+    </view>
+  </view>
+
+  <!-- 跑团3  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image data-group='3'  data-src='{{headImg4}}' bindtap='previewHead'  class='headImg' src='{{headImg4}}'></image>
+    </view>
+    <view style='width: 54%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom:6rpx;'>
+        <text data-group='3' bindtap='member'>联发集团分队</text>
+      </view>
+      <view  class='name' style='font-size: 26rpx;'>
+        <text><text style='color:#fd921d'>{{groupC}}</text> / 160</text>
+      </view>
+      <view style='width:64%'>
+        <progress class='progress' percent="{{progressC}}" color="{{progressC < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="false"/>
+      </view>
+    </view>
+    <view style='width:19%' style='margin-top: 64rpx;margin-left:-64rpx;'>
+      <button class='join' data-club='建发绿跑团-联发集团分队' data-index='3' bindtap='join' data-group='3'>{{button}}</button>
+    </view>
+  </view>
+
+  <!-- 跑团4  -->
+  <view class='item' style='border-bottom: solid 1rpx #eee;' >
+    <view style='width:27%'>
+      <image data-group='4'  data-src='{{headImg5}}' bindtap='previewHead'  class='headImg' src='{{headImg5}}'></image>
+    </view>
+    <view style='width: 54%' class='wrapper'>
+      <view style='margin-top:12rpx; margin-bottom:6rpx;'>
+        <text data-group='4' bindtap='member'>旅游集团分队</text>
+      </view>
+      <view  class='name' style='font-size: 26rpx;'>
+        <text><text style='color:#fd921d'>{{groupD}}</text> / 160</text>
+      </view>
+      <view style='width:64%'>
+        <progress class='progress' percent="{{progressD}}" color="{{progressD < 100 ? 'orange' : 'red'}}" stroke-width="10" backgroundColor="#fff" active="false"/>
+      </view>
+    </view>
+    <view style='width:19%' style='margin-top: 64rpx;margin-left:-64rpx;'>
+      <button class='join' data-club='建发绿跑团-旅游集团分队' data-index='4' bindtap='join' data-group='4'>{{button}}</button>
+    </view>
+  </view>
+</view>
+
+<view class='list' >
+  <view class='title'>
+      <text style='margin-left:32rpx;width:80%'>评论区</text>
+      <text class='refresh' bindtap='refresh'>刷新</text>      
+      <text class='addComment' bindtap='addComment'>添加评论</text>
+  </view>
+  <view class='itemWrapper' wx:for="{{dataList}}" wx:key="{{index}}">
+    <view style='width: 20%'>
+      <image class='headImg2' src='{{item.headimg ? item.headimg : headImg1}}'></image>
+    </view>
+    <view style='width: 80%'>
+      <view class='Atitle'>
+        <view  style='width: 56%;font-size: 28rpx;font-weight: 400'>
+          <text>{{item.name}}</text>
+        </view>
+        <view style='width: 44%'>
+          <text  class='time'>{{item.time}}</text>
+        </view>
+      </view>
+      <view class='comment'>
+        <text>{{item.content}}</text>
+      </view>
+      <view class='imgList' hidden="{{imgList == [] }}" >
+        <view class='img' hidden="{{item.imgList.length == 0 }}">
+          <image mode='widthFix' bindtap='preview' src="{{item.imgList[0]}}" data-src='{{item.imgList[0]}}'></image>
+        </view>
+        <view class='img' hidden="{{item.imgList.length != 2}}">
+          <image mode='widthFix' bindtap='preview' src="{{item.imgList[1]}}" data-src='{{item.imgList[1]}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view  style='text-align: center' hidden='{{dataList == []}}'>
+    <text class='noComment' style='line-height: 128rpx;color: rgba(125,125,125,0.91);font-weight:300;font-size:32rpx;'>暂无评论~</text>
+  </view> -->
+</view>
